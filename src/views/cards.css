@@ -73,7 +73,7 @@
 }
 
 .cardsContainer .card .actions p {
-    color: var(--gassilver);
+    color: var(--gasblue);
 }
 
 @media (max-width: 1280px) {

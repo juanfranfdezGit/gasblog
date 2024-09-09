@@ -12,10 +12,12 @@
     width: 60px;
     height: 60px;
     object-fit: cover;
+    filter: drop-shadow(0 0 2px var(--grey));
 }
 
 .navbar ul {
     gap: 32px;
+    z-index: 5;
 }
 
 .navbar ul li {
