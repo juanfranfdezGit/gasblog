@@ -98,6 +98,22 @@
     .novedades h2 {
         right: 19vw;
     }
+
+    .novedades .novedad-container {
+        flex-direction: column;
+    }
+
+    .novedades .novedad-container .novedad::before {
+        opacity: .8;
+    }
+
+    .novedades .novedad-container .novedad .novedad-info {
+        opacity: 1;
+    }
+
+    .novedades .novedad-container .novedad {
+        min-width: 650px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -112,5 +128,18 @@
 
     .novedades .divider {
         right: 0;
+    }
+
+    .novedades .novedad-container .novedad {
+        min-width: 80vw;
+        height: 70vh;
+    }
+
+    .novedades .novedad-container .novedad::before {
+        opacity: .8;
+    }
+
+    .novedades .novedad-container .novedad .novedad-info {
+        opacity: 1;
     }
 }

@@ -145,6 +145,22 @@
     .contactContainer .contactForm .form form div button {
         width: 50%;
     }   
+
+    .contactContainer {
+        height: 120vh;
+    }
+
+    .contactContainer .contactForm {
+        flex-direction: column;
+        gap: 80px;
+        padding: 40px 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contactContainer .contactForm .form form div {
+        width: 60vw;
+    }
 }
 
 @media (max-width: 400px) {

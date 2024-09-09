@@ -26,8 +26,13 @@
     .navbar {
         flex-direction: column;
         height: 15vh;
-        padding-top: 80px;
+        padding-top: 90px;
         justify-content: center !important;
         align-items: center !important;
+    }
+
+    
+    .navbar img {
+        margin-bottom: 20px;
     }
 }
