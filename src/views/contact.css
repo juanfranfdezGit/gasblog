@@ -1,0 +1,166 @@
+.contactContainer {
+    background: url(../assets/formBack.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+}
+
+.contactContainer .contactForm {
+    padding: 120px;
+    background: var(--whiteopac);
+    z-index: 2;
+    border-radius: 24px;
+    border: 1px solid var(--gassilver);
+    color: var(--gasblue);
+    box-shadow: 0 0 15px var(--shadow);
+    gap: 80px;
+    align-items: start;
+}
+
+.contactContainer .contactForm .info {
+    flex-direction: column;
+}
+
+.contactContainer .contactForm .info .ubicacion {
+    flex-direction: column;
+    margin-bottom: 60px;
+    gap: 32px;
+}
+
+.contactContainer .contactForm .info .ubicacion p {
+    color: var(--gasblue);
+}
+
+.contactContainer .contactForm .info .socials {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contactContainer .contactForm .info .socials p {
+    color: var(--gasblue);
+}
+
+.contactContainer .contactForm .info .socials img {
+    margin: 0 8px;
+    width: 32px;
+    transition: all .5s;
+}
+
+.contactContainer .contactForm .info .socials img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 5px var(--gasblue));
+}
+
+.contactContainer .contactForm .form {
+    flex-direction: column;
+}
+
+.contactContainer .contactForm .form h2 {
+    margin-bottom: 60px;
+}
+
+.contactContainer .contactForm .form form {
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactContainer .contactForm .form form div {
+    width: 24vw;
+    flex-direction: column;
+    position: relative;
+}
+
+.contactContainer .contactForm .form form div label {
+    font-size: 24px;
+    position: absolute;
+    bottom: 4px;
+    z-index: -1;
+    transition: all .5s;
+}
+
+.contactContainer .contactForm .form form div input {
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--gasblue);
+    text-align: center;
+    font-size: 20px;
+    padding: 8px;
+}
+
+.contactContainer .contactForm .form form div input:focus {
+    outline: none;
+}
+
+.contactContainer .contactForm .form form div input:focus + label {
+    font-size: 16px;
+    bottom: 40px;
+    color: var(--gasred);
+}
+
+.contactContainer .contactForm .form form div input:valid + label {
+    font-size: 16px;
+    bottom: 40px;
+    color: var(--gasred);
+}
+
+.contactContainer .contactForm .form form div button {
+    width: 30%;
+    padding: 8px 12px;
+    border-radius: 12px;
+    border: 1px solid var(--gassilver);
+    box-shadow: 0 0 5px var(--shadow);
+    font-size: 24px;
+    font-family: 'BodyFont';
+    transition: all .5s;
+    color: var(--gasblue);
+}
+
+.contactContainer .contactForm .form form div button:hover {
+    cursor: pointer;
+    background: var(--gasred);
+}
+
+.contactContainer .contactForm .form form div button:active {
+    cursor: pointer;
+    box-shadow: inset 0 0 5px var(--black);
+}
+
+@media (max-width: 1280px) {
+    .contactContainer {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 900px) {
+    .contactContainer .contactForm {
+        width: 80%;
+    }
+
+    .contactContainer .contactForm .form form div button {
+        width: 50%;
+    }   
+}
+
+@media (max-width: 400px) {
+    .contactContainer {
+        height: 120vh;
+    }
+
+    .contactContainer .contactForm {
+        flex-direction: column;
+        gap: 80px;
+        padding: 40px 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contactContainer .contactForm .form form div {
+        width: 60vw;
+    }
+}

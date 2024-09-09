@@ -1,0 +1,33 @@
+.navbar {
+    position: absolute;
+    width: 100vw;
+    height: 70vh;
+    padding: 32px 40px;
+    background: linear-gradient(black 30%, rgba(0,0,0,0));
+    justify-content: space-between !important;
+    align-items: start !important;
+}
+
+.navbar img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.navbar ul {
+    gap: 32px;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+@media (max-width: 400px) {
+    .navbar {
+        flex-direction: column;
+        height: 15vh;
+        padding-top: 80px;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}

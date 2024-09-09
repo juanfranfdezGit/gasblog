@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "MotorFont";
+  src: url(./fonts/moto-verse.otf);
+}
+
+@font-face {
+  font-family: "BodyFont";
+  src: url(./fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "TitlesFont";
+  src: url(./fonts/Roboto-Bold.ttf);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+  background: var(--gasblue);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gasred);
+}
+
+:root {
+  --white: #fcfcfc;
+  --whiteopac: #fcfcfc79;
+  --gasred: #dd2100;
+  --gasblue: #000435;
+  --gassilver: #c0c0c0;
+  --black: #222;
+  --grey: #555;
+  --shadow: #222222ad;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--white);
+  overflow-x: hidden;
+}
+
+h1 {
+  color: var(--white);
+  font-size: 48px;
+  font-family: "MotorFont";
+}
+
+h2 {
+  font-family: 'TitlesFont';
+  font-size: 32px;
+  line-height: 32px;
+}
+
+h3 {
+  font-family: 'TitlesFont';
+  color: var(--gasred);
+  font-size: 24px;
+}
+
+p {
+  font-family: 'BodyFont';
+  color: var(--gassilver);
+  font-size: 16px;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 24px;
+  transition: all .5s;
+  font-family: 'BodyFont';
+}
+
+span {
+  color: var(--white);
+}
+
+a:hover {
+  color: var(--gasred);
+}
+
+.flex { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

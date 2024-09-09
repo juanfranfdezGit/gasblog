@@ -1,0 +1,39 @@
+.heroContainer {
+    width: 100vw;
+    height: 95vh;
+    background: url(../assets/heroBack.jpg);
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: 0 0 20px var(--shadow);
+}
+
+.heroContainer .Title {
+    position: relative;
+    flex-direction: column;
+    z-index: 4;
+    margin-top: -40vh;
+}
+
+.heroContainer .Title h1 {
+    font-size: 120px;
+}
+
+.heroContainer .Title .subTitle {
+    font-family: 'TitlesFont';
+    position: absolute;
+    right: 10px;
+    bottom: 30px;
+}
+
+
+@media (max-width: 400px) {
+    .heroContainer .Title h1 {
+        margin-top: 80px;
+        font-size: 60px;
+    }
+
+    .heroContainer .Title .subTitle {
+        bottom: 5px;
+    }
+}

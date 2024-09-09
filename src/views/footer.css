@@ -1,0 +1,13 @@
+.footer {
+    flex-direction: column;
+    padding: 40px;
+    gap: 12px;
+    background: var(--black);
+    color: var(--white);
+}
+
+@media (max-width: 400px) {
+    .footer {
+        text-align: center;
+    }
+}
